@@ -10,6 +10,11 @@
 .fa-3x {
     font-size: 3em;
 }
+.display-1 {
+    font-weight: 200;
+    line-height: 1.2;
+}
+
 @keyframes fa-spin {
     0% {
         transform: rotate(0deg);
@@ -127,10 +132,7 @@ h1 {
 .lead {
     font-weight: 300;
 }
-.display-1 {
-    font-weight: 300;
-    line-height: 1.2;
-}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -510,16 +512,16 @@ body {
     top: 2000px;
 }
 .display-1 {
-    font-size: 4.2375rem;
+    font-size: 1.5rem;
 }
 @media (min-width: 576px) {
     .display-1 {
-        font-size: 4.96677rem;
+        font-size: 2rem;
     }
 }
 @media (min-width: 768px) {
     .display-1 {
-        font-size: 6.02782rem;
+        font-size: 3rem;
     }
 }
 @keyframes animation-16jpnkj {
