@@ -1,56 +1,222 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Alexandra Teixeira | Home</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="icon" type="image/png" href="imagens/icon.png">
-	
-	<meta name="description" content="Alexandra Teixeira Portfolio">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra | Portfólio</title>
+    <link rel="icon" href="./images/like.webp" type="image/webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-	<noscript class="sf-hidden">You need to enable JavaScript to run this app!</noscript>
-	<div id="home" class="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 jumbotron jumbotron-fluid" style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(136deg,rgb(11, 0, 53),rgb(20, 1, 96),rgb(70, 0, 120),rgb(69, 0, 96),rgb(31, 0, 45)) repeat scroll 0% 0% / 1200% 1200%">
-	<div id="stars"></div>
-		<div class="text-center container">
-			<h1 class="display-1">Alexandra Teixeira</h1>
-			<div class="Typist lead typist" style="color:#fff"> I'm <span class="typing" style="color:#ff00aa"></span></div>
-			
-			<div class="p-5">
-				<a target="blank" aria-label="Alexandra Teixeira's GitHub" href="https://github.com/alexandraat"><i class="fab fa-github fa-3x socialicons"></i></a>
-				<a target="blank" aria-label="Alexandra Teixeira's LinkedIn" href="https://www.linkedin.com/in/alexandraat/"><i class="fab fa-linkedin fa-3x socialicons"></i></a>
-				<!--<a target="blank" aria-label="Alexandra Teixeira's Curriculum Vitae" href=pag><i class="fab fa-twitter fa-3x socialicons"></i></a>-->
 
-			</div>
-			<a class="btn btn-outline-light btn-lg" role="button" aria-label="cv" href="cv" >Curriculum</a>
-			<a class="btn btn-outline-light btn-lg" role="button" aria-label="New site" href="portfolio" style="margin-left: 10px;">Portfolio</a>
-		
-			<p><a aria-label="Contact" href="mailto:alexandrateixeira002@gmail.com" target="_blank">Contact</a></p>
-		</div>
-		
-	</div>
+    <header>
+        <div class="logo">
+            <img src="./images/pc.webp" alt="Alexandra" class="logo-img">
+            <span>Alexandra</span>
+        </div>
 
-	  <!-- Vendor JS Files -->
-	  <script src="vendor/jquery/jquery.min.js"></script>
-	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-	  <script src="vendor/php-email-form/validate.js"></script>
-	  <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
-	  <script src="vendor/counterup/counterup.min.js"></script>
-	  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-	  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	  <script src="vendor/venobox/venobox.min.js"></script>
-	  <script src="vendor/typed.js/typed.min.js"></script>
-	  <script type="text/javascript">
-		var typed = new Typed('.typing',{
-		  strings: ["Software Engineer", "Developer", "Designer ツ"],
-		  loop: true,
-		  typeSpeed: 100,
-		  backSpeed: 100
-		});
-	  </script>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="social-icons mobile-social">
+                <a href="https://github.com/seuuser"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/alexandra-teixeira"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./curriculo.pdf"><i class="fas fa-file-pdf"></i></a>
+            </div>
+        </nav>
+        <div class="social-icons desktop-social">
+            <a href="https://github.com/seuuser"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/alexandra-teixeira"><i class="fab fa-linkedin-in"></i></a>
+            <a href="./curriculo.pdf"><i class="fas fa-file-pdf"></i></a>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Olá, sou a <span class="accent">Alexandra</span></h1>
+            <p class="fade-in delay-1">Desenvolvedora Frontend criando experiências digitais incríveis</p>
+            <div class="cta-buttons fade-in delay-2">
+                <a href="#projects" class="cta-button">
+                    <i class="fas fa-eye"></i> Ver projetos
+                </a>
+                <a href="./curriculo.pdf" class="cta-button secondary" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Currículo
+                </a>
+            </div>
+        </div>
+        <div class="hero-image fade-in delay-3">
+            <img src="./images/acenar.png" alt="Alexandra">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p>Desenvolvedora Full Stack com paixão por Frontend e Design. Crio interfaces que combinam estética e funcionalidade.</p>
+                <p>Minha jornada começou com desenvolvimento web e evoluiu para soluções completas com foco na experiência do usuário.</p>
+                <div class="skills">
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">UI/UX</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">Figma</span>
+                </div>
+            </div>
+<div class="about-image">
+    <div class="design-element"></div>
+    <div class="design-element"></div>
+    <div class="design-element">
+        <img src="./images/pc.webp" alt="PC emoji" class="idea-img">
+    </div>
+</div>
+        </div>
+    </section>
+    
+
+   <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="project-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/444/fff?text=Plataforma+Design" alt="Plataforma Design">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma de Design</h3>
+                        <p>Plataforma para designers compartilharem portfólios</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/555/fff?text=App+Tarefas" alt="App Tarefas">
+                    </div>
+                    <div class="project-info">
+                        <h3>App de Tarefas</h3>
+                        <p>Organizador de tarefas com drag and drop</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/666/fff?text=E-commerce" alt="E-commerce">
+                    </div>
+                    <div class="project-info">
+                        <h3>Loja E-commerce</h3>
+                        <p>Loja virtual com carrinho de compras</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/777/fff?text=Blog+Pessoal" alt="Blog Pessoal">
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Pessoal</h3>
+                        <p>Blog com sistema de comentários</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/888/fff?text=Dashboard" alt="Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Painel de métricas com gráficos interativos</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/999/fff?text=Rede+Social" alt="Rede Social">
+                    </div>
+                    <div class="project-info">
+                        <h3>Rede Social</h3>
+                        <p>Plataforma de conexão entre profissionais</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:alexandrateixeira002@gmail.com" class="contact-link">
+                        alexandrateixeira002@gmail.com
+                    </a>
+                    <button class="copy-btn" data-clipboard-text="alexandrateixeira002@gmail.com">
+                        <i class="far fa-copy"></i> Copiar
+                    </button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/alexandraat" target="_blank" class="contact-link">
+                        /alexandraat
+                    </a>
+                    <a href="https://linkedin.com/in/alexandra-teixeira" target="_blank" class="contact-btn">
+                        <i class="fas fa-external-link-alt"></i> Visitar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© <span id="year"></span> Alexandra. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
