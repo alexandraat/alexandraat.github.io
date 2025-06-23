@@ -16,15 +16,20 @@
             <img src="./images/pc.webp" alt="Alexandra" class="logo-img">
             <span>Alexandra</span>
         </div>
+        <button class="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
 
-        
         <nav class="nav-menu">
-            <ul>
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
+        <button class="close-menu" aria-label="Fechar menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">Sobre mim</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
             <div class="social-icons mobile-social">
                 <a href="https://github.com/seuuser"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/alexandra-teixeira"><i class="fab fa-linkedin-in"></i></a>
@@ -39,7 +44,12 @@
     </header>
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="fade-in">Olá, sou a <span class="accent">Alexandra</span></h1>
+            <h1 class="fade-in">
+            Olá, sou a <span class="accent name-with-arrow">Alexandra
+                <img src="./images/seta.png" alt="Seta" class="arrow-img">
+            </span>
+            </h1>
+
             <p class="fade-in delay-1">Desenvolvedora Frontend criando experiências digitais incríveis</p>
             <div class="cta-buttons fade-in delay-2">
                 <a href="#projects" class="cta-button">
@@ -180,7 +190,7 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Vamos Conversar</h2>
+            <h2 class="section-title">📞 Contactos</h2>
             <div class="contact-container">
                 <div class="contact-card">
                     <div class="contact-icon">

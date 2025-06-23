@@ -77,38 +77,6 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav(); // Chamar inicialmente
 
-// Copiar email ao clicar
-const emailElement = document.querySelector('.contact-email');
-if (emailElement) {
-    emailElement.addEventListener('click', (e) => {
-        e.preventDefault();
-        const email = 'alexandrateixeira002@gmail.com';
-        navigator.clipboard.writeText(email).then(() => {
-            const originalText = emailElement.textContent;
-            emailElement.textContent = 'Email copiado!';
-            setTimeout(() => {
-                emailElement.textContent = originalText;
-            }, 2000);
-        });
-    });
-}
-
-// Menu Hambúrguer
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Fechar menu ao clicar em um link
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
 
 // Copiar email
 const copyBtn = document.querySelector('.copy-btn');
@@ -123,13 +91,30 @@ if (copyBtn) {
         });
     });
 }
-// Animação de carregamento
-document.addEventListener('DOMContentLoaded', () => {
-    const loader = document.querySelector('.loader');
-    if (loader) {
-        loader.classList.add('fade-out');
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 1000);
+
+// Menu hambúrguer
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const closeMenuBtn = document.querySelector('.close-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.add('active');
+});
+
+closeMenuBtn.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+});
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+
+document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('active') &&
+        !navMenu.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+        navMenu.classList.remove('active');
     }
 });
