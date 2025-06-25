@@ -782,11 +782,10 @@ footer {
 
 .arrow-img {
   position: absolute;
-  top: 50%;
   left: 100%;
-  width: 100px; /* ajusta conforme necessário */
+  width: 150px;
   transform: translateY(-50%);
-  animation: arrowPulse 2s infinite ease-in-out;
+  animation: arrowPulse 3s infinite ease-in-out;
 }
 
 @keyframes arrowPulse {
