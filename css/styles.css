@@ -738,7 +738,7 @@ footer {
 }
 
 .contact-btn {
-    background: #0077b5;
+    background: var(--accent-color);
     color: white;
     text-decoration: none;
 }
@@ -748,7 +748,7 @@ footer {
 }
 
 .contact-btn:hover {
-    background: var(--accent-color);
+    background: #e60073;
 }
 
 .hamburger {
