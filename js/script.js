@@ -118,3 +118,45 @@ document.addEventListener('click', (e) => {
         navMenu.classList.remove('active');
     }
 });
+
+document.querySelectorAll('.demo-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const videoSrc = btn.getAttribute('data-video');
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('demoVideo');
+        video.src = videoSrc;
+        modal.classList.add('active');
+    });
+});
+
+const closeModal = () => {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('demoVideo');
+    video.pause();
+    video.currentTime = 0;
+    video.src = '';
+    modal.classList.remove('active');
+};
+
+document.querySelector('.close-video').addEventListener('click', closeModal);
+
+document.getElementById('videoModal').addEventListener('click', (e) => {
+    if (e.target.id === 'videoModal') {
+        closeModal();
+    }
+});
+// Fechar modal ao pressionar ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+// Animação de carregamento
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 1000);
+});

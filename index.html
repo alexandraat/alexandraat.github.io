@@ -98,14 +98,14 @@
                 <!-- Projeto 1 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400/444/fff?text=Plataforma+Design" alt="Plataforma Design">
+                        <img src="./projetos/alien.png" alt="Plataforma Design">
                     </div>
                     <div class="project-info">
-                        <h3>Plataforma de Design</h3>
-                        <p>Plataforma para designers compartilharem portfólios</p>
+                        <h3>Space Invaders - Once again</h3>
+                        <p>Jogo</p>
                         <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                            <a href="./projetos/demo-aliens.mkv"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/alexandraat/SpaceInvaders-OnceAgain"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,10 @@
                         <h3>App de Tarefas</h3>
                         <p>Organizador de tarefas com drag and drop</p>
                         <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="demo-btn" data-video="./projetos/demo-aliens.mkv">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+
                             <a href="#"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
@@ -227,6 +230,14 @@
         </div>
     </footer>
 
+    <div class="video-modal" id="videoModal">
+    <div class="video-content">
+        <span class="close-video">&times;</span>
+        <video controls id="demoVideo" width="100%"></video>
+    </div>
+    </div>
+
     <script src="./js/script.js"></script>
+
 </body>
 </html>
